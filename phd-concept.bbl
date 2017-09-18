@@ -1,0 +1,424 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+C\BPBI M.~Bishop%
+}{%
+C\BPBI M.~Bishop%
+}{%
+{\protect \APACyear {2006}}%
+{\protect \APACexlab {{\protect \BCnt {1}}}}}]{%
+bishop2}
+\APACinsertmetastar {%
+bishop2}%
+\begin{APACrefauthors}%
+Bishop, C\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006{\protect \BCnt {1}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Neural Networks} {Neural networks}.{\BBCQ}
+\newblock
+\BIn{} C\BPBI M.~Bishop\ (\BED), \APACrefbtitle {{P}attern {R}ecognition and
+  {M}achine {L}earning} {{P}attern {R}ecognition and {M}achine {L}earning}\
+  (\BPGS\ 225--290).
+\newblock
+\APACaddressPublisher{New York}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+C\BPBI M.~Bishop%
+}{%
+C\BPBI M.~Bishop%
+}{%
+{\protect \APACyear {2006}}%
+{\protect \APACexlab {{\protect \BCnt {2}}}}}]{%
+bishop}
+\APACinsertmetastar {%
+bishop}%
+\begin{APACrefauthors}%
+Bishop, C\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006{\protect \BCnt {2}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sequential Data} {Sequential data}.{\BBCQ}
+\newblock
+\BIn{} C\BPBI M.~Bishop\ (\BED), \APACrefbtitle {{P}attern {R}ecognition and
+  {M}achine {L}earning} {{P}attern {R}ecognition and {M}achine {L}earning}\
+  (\BPGS\ 605--652).
+\newblock
+\APACaddressPublisher{New York}{Springer}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+L.~Bishop%
+\ \BBA {} Goebl%
+}{%
+L.~Bishop%
+\ \BBA {} Goebl%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+laura}
+\APACinsertmetastar {%
+laura}%
+\begin{APACrefauthors}%
+Bishop, L.%
+\BCBT {}\ \BBA {} Goebl, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Music and Movement: Musical Instruments and Performers}
+  {Music and movement: Musical instruments and performers}.{\BBCQ}
+\newblock
+\BIn{} R.~Ashley\ \BBA {} R.~Timmers\ (\BEDS), \APACrefbtitle {The {R}outledge
+  {C}ompanion to {M}usic {C}ognition} {The {R}outledge {C}ompanion to {M}usic
+  {C}ognition}\ (\BPGS\ 349--361).
+\newblock
+\APACaddressPublisher{}{Routledge}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cancino~Chac\'{o}n%
+\ \BBA {} Grachten%
+}{%
+Cancino~Chac\'{o}n%
+\ \BBA {} Grachten%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+basis}
+\APACinsertmetastar {%
+basis}%
+\begin{APACrefauthors}%
+Cancino~Chac\'{o}n, C.%
+\BCBT {}\ \BBA {} Grachten, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Basis Mixer: A Computational Romantic Pianist} {The
+  basis mixer: A computational romantic pianist}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 17th {I}nternational {S}ociety for
+  {M}usic {I}nformation {R}etrieval {C}onference.} {Proceedings of the 17th
+  {I}nternational {S}ociety for {M}usic {I}nformation {R}etrieval
+  {C}onference.}
+\newblock
+\APACrefnote{Late Breaking/Demo extended abstract}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cancino-Chac{\'o}n%
+, Gadermaier%
+, Widmer%
+\BCBL {}\ \BBA {} Grachten%
+}{%
+Cancino-Chac{\'o}n%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+basis-dynamics}
+\APACinsertmetastar {%
+basis-dynamics}%
+\begin{APACrefauthors}%
+Cancino-Chac{\'o}n, C\BPBI E.%
+, Gadermaier, T.%
+, Widmer, G.%
+\BCBL {}\ \BBA {} Grachten, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An evaluation of linear and non-linear models of
+  expressive dynamics in classical piano and symphonic music} {An evaluation of
+  linear and non-linear models of expressive dynamics in classical piano and
+  symphonic music}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Machine Learning}{106}{6}{887--909}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dannenberg%
+}{%
+Dannenberg%
+}{%
+{\protect \APACyear {1984}}%
+}]{%
+dannenberg}
+\APACinsertmetastar {%
+dannenberg}%
+\begin{APACrefauthors}%
+Dannenberg, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1984}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An on-line algorithm for real-time accompaniment} {An
+  on-line algorithm for real-time accompaniment}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {{I}nternational {C}omputer {M}usic {C}onference}
+  {{I}nternational {C}omputer {M}usic {C}onference}\ (\BVOL~84, \BPGS\
+  193--198).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dannenberg%
+\ \BBA {} Raphael%
+}{%
+Dannenberg%
+\ \BBA {} Raphael%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+music-score-alignment}
+\APACinsertmetastar {%
+music-score-alignment}%
+\begin{APACrefauthors}%
+Dannenberg, R\BPBI B.%
+\BCBT {}\ \BBA {} Raphael, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Music Score Alignment and Computer Accompaniment} {Music
+  score alignment and computer accompaniment}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Communications of the {ACM} -- {M}usic information
+  retrieval}{49}{8}{38--43}.
+\newblock
+\begin{APACrefDOI} \doi{10.1145/1145287.1145311} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+De~Poli%
+}{%
+De~Poli%
+}{%
+{\protect \APACyear {2004}}%
+}]{%
+de-poli}
+\APACinsertmetastar {%
+de-poli}%
+\begin{APACrefauthors}%
+De~Poli, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Methodologies for expressiveness modelling of and for
+  music performance} {Methodologies for expressiveness modelling of and for
+  music performance}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of New Music Research}{33}{3}{189--202}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Goebl%
+\ \BBA {} Guggenberger%
+}{%
+Goebl%
+\ \BBA {} Guggenberger%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+tappingfriend}
+\APACinsertmetastar {%
+tappingfriend}%
+\begin{APACrefauthors}%
+Goebl, W.%
+\BCBT {}\ \BBA {} Guggenberger, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {TAPPINGFRIEND--AN INTERACTIVE SCIENCE EXHIBIT FOR
+  EXPERIENCING SYNCHRONICITY WITH REAL AND ARTIFICIAL PARTNERS}
+  {Tappingfriend--an interactive science exhibit for experiencing synchronicity
+  with real and artificial partners}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the Third Vienna Talk on Music
+  Acoustics}{}{}{227--230}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Keller%
+}{%
+Keller%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+keller-stuff}
+\APACinsertmetastar {%
+keller-stuff}%
+\begin{APACrefauthors}%
+Keller, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Ensemble Performance: Interpersonal Alignment of Musical
+  Expression} {Ensemble performance: Interpersonal alignment of musical
+  expression}.{\BBCQ}
+\newblock
+\BIn{} D.~Fabian, R.~Timmers\BCBL {}\ \BBA {} E.~Schubert\ (\BEDS),
+  \APACrefbtitle {{E}xpressiveness in {M}usic {P}erformance: {E}mpirical
+  {A}pproaches {A}cross {S}tyles and {C}ultures} {{E}xpressiveness in {M}usic
+  {P}erformance: {E}mpirical {A}pproaches {A}cross {S}tyles and {C}ultures}\
+  (\BPGS\ 260--282).
+\newblock
+\APACaddressPublisher{Oxford}{Oxford University Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nakamura%
+, Nakamura%
+\BCBL {}\ \BBA {} Sagayama%
+}{%
+Nakamura%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+nakamura}
+\APACinsertmetastar {%
+nakamura}%
+\begin{APACrefauthors}%
+Nakamura, T.%
+, Nakamura, E.%
+\BCBL {}\ \BBA {} Sagayama, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Real-time audio-to-score alignment of music performances
+  containing errors and arbitrary repeats and skips} {Real-time audio-to-score
+  alignment of music performances containing errors and arbitrary repeats and
+  skips}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE/ACM Transactions on Audio, Speech and Language
+  Processing (TASLP)}{24}{2}{329--339}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Raphael%
+}{%
+Raphael%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+raphael2010music}
+\APACinsertmetastar {%
+raphael2010music}%
+\begin{APACrefauthors}%
+Raphael, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Music plus one and machine learning} {Music plus one and
+  machine learning}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the 27th {I}nternational {C}onference on
+  {M}achine {L}earning {(ICML-10)}} {Proceedings of the 27th {I}nternational
+  {C}onference on {M}achine {L}earning {(ICML-10)}}\ (\BPGS\ 21--28).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Steen%
+\ \BBA {} Keller%
+}{%
+Steen%
+\ \BBA {} Keller%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+jadam}
+\APACinsertmetastar {%
+jadam}%
+\begin{APACrefauthors}%
+Steen, M\BPBI C.%
+\BCBT {}\ \BBA {} Keller, P\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The {AD}aptation and {A}nticipation Model ({ADAM}) of
+  sensorimotor synchronization} {The {AD}aptation and {A}nticipation model
+  ({ADAM}) of sensorimotor synchronization}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in Human Neuroscience}{7}{253}{1--15}.
+\newblock
+\begin{APACrefDOI} \doi{10.3389/fnhum.2013.00253} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+van~der Steen%
+, Jacoby%
+, Fairhurst%
+\BCBL {}\ \BBA {} Keller%
+}{%
+van~der Steen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+jadam2}
+\APACinsertmetastar {%
+jadam2}%
+\begin{APACrefauthors}%
+van~der Steen, M\BPBI M.%
+, Jacoby, N.%
+, Fairhurst, M\BPBI T.%
+\BCBL {}\ \BBA {} Keller, P\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Sensorimotor synchronization with tempo-changing
+  auditory sequences: Modeling temporal adaptation and anticipation}
+  {Sensorimotor synchronization with tempo-changing auditory sequences:
+  Modeling temporal adaptation and anticipation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Brain {R}esearch}{1626}{}{66--87}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Widmer%
+}{%
+Widmer%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+manifesto}
+\APACinsertmetastar {%
+manifesto}%
+\begin{APACrefauthors}%
+Widmer, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Getting closer to the essence of music: The {C}on
+  {E}spressione manifesto} {Getting closer to the essence of music: The {C}on
+  {E}spressione manifesto}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{ACM Transactions on Intelligent Systems and Technology
+  (TIST)}{8}{2}{19}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

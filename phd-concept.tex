@@ -1,0 +1,127 @@
+\documentclass[12pt]{scrartcl}
+
+%For bibliography:
+%\usepackage{cite}
+%\usepackage{natbib}
+\usepackage[natbibapa]{apacite}
+\usepackage[]{doi}
+\usepackage[]{hyperref}
+
+%For lists and bullet points:
+\usepackage{blindtext}
+\usepackage{scrextend}
+
+
+\setcitestyle{square}
+
+%\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+
+\title{Using a Computer Accompaniment System to Study Group Music Performance} % Article title
+\subtitle{Concept for MDW PhD Program}
+\author{Martin Bonev}
+\date{\today}
+
+
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+\section{Introduction}
+\label{introduction}
+
+Music performance is often a collective activity, in which multiple musicians form groups and ensembles of various sizes and compositions. While the individual's interpretation of the piece of music is important as it can bring originality and uniqueness, to achieve a cohesive performance the group members must collaborate with each other, i.e., they must communicate information about both the musical structure of the piece and their intentions. Musicians thus try to be as predictable as possible to each other without sacrificing the expressiveness of their performance \citep{laura}. It has been determined that performers achieve such communication via a variety of mechanisms, including auditory and visual cues, psychological instruments, such as preparatory and regulatory strategies, and real-time cognitive-motor ensemble skills that facilitate mutual adaptation, attention and anticipation \citep{keller-stuff}.
+
+Studying the individual effect and importance in group music performance of each of these communicative mechanisms is the main goal of this PhD project. The difficulty of this task lies in the fact that in group music performance a human performer always uses these mechanisms simultaneously, thus obscuring their individual effects. To tackle this problem, an artificial performer, in the form of a computer accompaniment system (CAS), will be used. Unlike a human performer, every aspect of the behavior of such an accompaniment system will be easy to alter and customize, thus allowing for the creation of different contexts in which the communicative mechanisms could be examined individually. The CAS will also be capable of providing detailed information about the different mechanisms it uses during performance. This PhD project will be structured around two main tasks: the development of the computer accompaniment system to fill the role of the artificial performer and the undertaking of a series of experiments with the CAS as a participant to test the mechanisms that influence group music performance. Furthermore, the PhD project will be undertaken in the context of the Coordination and Collaborative Creativity in Music Ensembles (COCREATE) project, supported by the Austrian Science Fund (FWF). 
+
+
+%Music ensemble performance is a task that involves precise coordination and collaboration between the performers. The creative interpretation of existing musical scores is an essential part of it. Ensemble musicians need to be able to sound unique, in order to deliver an engaging experience to the audience, but also to remain predictable to each other to achieve coordination. This requires quick and often non-verbal communication between the performers \citep{social-music}. The Coordination and Collaborative Creativity in Music Ensembles (COCREATE) project, supported by the Austrian Science Fund (FWF), aims to investigate this phenomenon.
+
+%\section{Overview}
+%\label{overview}
+%How ensemble musicians achieve well-coordinated performances in musical contexts requiring creative interpretation is the question driving this research. In order to determine the effect of different factors on live human interaction, both human-human and human-computer collaborations will be examined and compared. This will be done to investigate the importance of the different aspects of interpersonal coordination in expressive group performance \citep{keller-stuff}. The PhD project is structured around two main tasks: the development of a computer accompaniment system (CAS) to fill the role of the artificial performer and the undertaking of a series of experiments with the CAS as a participant to test the factors that influence group music performance.
+
+\section{Preliminary System}
+\label{perliminary-system}
+There are two basic functions that a computer accompaniment system has to be able to carry out. First, it needs to be able to follow the solo performance and determine the exact position of the soloist in the score. Second, it has to regulate its tempo so that its own performance is temporally aligned with that of the soloist. Various research has been conducted in this area \citep{music-score-alignment}. One of the first accompaniment systems was developed in 1984 and implements an efficient dynamic programming algorithm for finding the best match between the solo performance and the music score \citep{dannenberg}. Another example is a system that instead of matching the performance to the score, computes probability distributions to determine the most probable position of the played note in the score \citep{nakamura}. Additionally, a system for musical accompaniment in which a computer-driven orchestra follows and learns from a soloist in a concerto-like setting has been developed \citep{raphael2010music}.
+
+An initial version of a CAS, written in the Python programming language, has been recently implemented by Carlos Eduardo Cancino-Chac\'on and Amaury Durand. This system will be used and further developed during this PhD project. It is currently capable of adapting to fluctuations in the human performance and tracking their position in the score. Furthermore, it uses that input to determine the tempo and dynamics to align its performance with theirs. The current version of the CAS is not yet capable of real-time performance. The program is structured into three main modules -- a \textit{score follower}, a \textit{timing model} and an \textit{expressive performance model}. 
+
+%\begin{labeling}{alligator}
+
+\subsection{Score Follower}
+\label{score-follower}
+The score follower allows the CAS to determine the exact position of the performance in the score, i.e., the exact note that the performer is hitting at the current moment in time. It receives monophonic MIDI input from the performer, e.g., from a MIDI synthesizer, and compares it with the score input, which is also in MIDI format. Furthermore, the score follower reads the MIDI timings and velocities to extract crucial information about the current tempo and dynamics of the performance. The score follower incorporates Hidden Markov Models (HMM) \citep{bishop} to predict with high accuracy the position of the performer in the score. Currently, it is only capable of following monophonic music. This is a limitation, as in general, a human performance may include multiple tones played together, e.g, playing a chord.
+  
+\subsection{Timing Model}
+\label{timing-model}
+The timing model uses the temporal information obtained by the score follower to extrapolate the future evolution of the performance and determine the tempo in which the CAS is to produce its output. This prediction is important, because an accompaniment system that tries to achieve synchrony by waiting to hear a note, and then responding, will always be late. The timing model is based on the Linear Timing model \citep{tappingfriend} and the Joint ADaptation and Anticipation Model (JADAM) of sensorimotor synchronization \citep{jadam, jadam2}, which combines reactive error correction processes (adaptation) with predictive temporal extrapolation processes (anticipation). 
+  
+\subsection{Expressive Performance Model}
+\label{expressive-performance-model}
+The expressive performance model allows the CAS to interpret both the score and the human performance, through the MIDI velocities of each played note, in order to alter the dynamics to achieve expressiveness in the performance of the CAS \citep{de-poli}. It is based on the BASIS Mixer -- a prototype system for musical expression \citep{basis-dynamics, basis}.
+
+
+%\end{labeling}
+
+\section{Project Aims}
+\label{project-aims}
+The two main aspects of the PhD project are the further development of the computer accompaniment system and its application in examining the different factors that influence interpersonal coordination in expressive group performance.
+
+\subsection{Computer Accompaniment System Development}
+\label{cas-development}
+The computer accompaniment system needs to be able to produce performances that are accurate and convincing, so that a musician would be willing to participate in an experiment with the CAS as their co-performer. The system will be written in the Python programming language as it offers great code readability and the existing basic version is already implemented in Python. Increased run-time performance will be achieved with the Cython superset of the programming language. Several improvements to the CAS are planned to be undertaken during this project. 
+
+First, the system is to be adapted for on-line matching \citep{music-score-alignment}, i.e., to work in real-time, which is crucial for co-performing with human musicians. 
+
+Second, the \textit{score follower} is to be extended to read and track polyphonic and not just monophonic music. This would significantly increase its functionality and allow the CAS to be used with a variety of musical pieces. 
+
+Third, different machine learning algorithms are planned to be implemented in the \textit{timing model} and the \textit{expressive performance model}, which would allow the CAS to learn and recognize patterns, such as chord progressions, changes in dynamics and musical phrases. This would be done to give the system some leadership capacities, in order to not simply follow the human performer, but to also attempt to guide them into a certain tempo. It would also allow for a greater degree of expressiveness through the recognition and mimicking of performances styles. The \textit{timing model} of the current CAS program is already implemented as an artificial neural network \citep{bishop2}.  
+
+Fourth, the CAS could be extended to produce ancillary movements with an avatar head. Such movements typically occur during ensemble performance, i.e., head sway and nodding. This would provide the human co-performer with visual cues, which are an important part of interpersonal alignment \citep{keller-stuff}.
+
+Finally, implementing features that allow real-time interpretation of pianists' body movements may be possible. This would be a further extension of providing an avatar head and would allow the CAS to also read ancillary movements from the human performer, thus further improving its group performance capabilities. 
+
+\subsection{Tests and Experiments}
+\label{test-experiments}
+After the computer accompaniment system is successfully implemented and capable of interpreting and performing music in a convincing way, it will be used in experiments to examine the different mechanisms for interpersonal coordination in expressive group performance.
+
+The CAS will have a major applicability in such experiments in that it will have nearly unlimited technical facility, allowing the coordination of nearly arbitrarily fast notes and complex rhythms \citep{music-score-alignment}. Furthermore, the behavior of the system can be easily altered, e.g., it can be made less or more responsive to the input from the human performer or it can be made to encourage its co-performer to play in a slower or faster tempo. These alterations can provide extensive control into the context and environment of the experiments, in a way that would be impossible with a human performer.
+
+The experiments will consist of a number of musicians performing pieces of music with the computer accompaniment system. The CAS will then participate in storing separate pieces data from the performance for each of the factors that influence interpersonal coordination in expressive ensemble performance \citep{keller-stuff}. For example, online cognitive-motor ensemble skills, such as phase correction and imitation, will be monitored by the \textit{tempo model}, through note onset information from the output of a MIDI keyboard. Similarly, auditory cues like intensity and articulation will be monitored by the \textit{expressive performance model} through the MIDI velocities of the notes performed by the musician. Gathering separate information for the individual aspects of group music performance would give valuable insights into the importance and weight of each one of them, thus presenting a much clearer perception of the whole phenomenon.
+
+Additionally, the difference in the movement and gestures of the musicians during performance can be investigated with a motion capture system. This could provide information about visual cues, such as instrumental movements and ancillary movements, and their influence on the whole performance. 
+
+Furthermore, both human-human and human-machine musical performances will be examined and the differences between them will be compared. This would be done by involving another musician or by hiding from the performer the fact that they are playing with a computer. These experiments should provide information whether such differences are a result of the inability or unwillingness on the part of the musicians to conceive of computer partners as intentional and creative. They could also give a small insight into which characteristics of the computer accompaniment system are most attractive and helpful and what updates could be made, so that intelligent music systems, such as the CAS, could be turned into useful tools for musicians in the area of expressive group music performance \citep{manifesto}. 
+%The second main task of the project involves the conduction of experiments to both test the capabilities of the CAS and examine the interaction of musicians with it. In the present day, the potential of Machine Learning and Artificial Intelligence (A.I.) is undeniable, but so far the research is focused on more practical and objective tasks, such as automatic driving, image recognition and information retrieval. An understanding of music, its qualities, and how they are perceived by humans is not an area that has been sufficiently explored \citep{manifesto}. Even though research in Music Information Retrieval and recognition of performance styles in particular has been carried out \citep{horowitz}, music is still widely perceived as a process of creativity and artistic expression, and not as exact science. The experiments undertaken in this project would aim to help clarify the potential applicability of A.I. in expressive adaptive joint music performance. This will be done in a form of a Turing Test, i.e. can musicians recognize whether they are performing with a machine or a live person. Furthermore, the ability of human musicians to perform along a computer accompaniment system will also be tested. The differences in performance accuracy and style of musicians when playing with another human and with a machine will be examined. These will be tested by comparing the MIDI and audio output of the Clavinova piano (details about the model). 
+
+%Additionally, the difference in the motions of the performers can be investigated with the Motion Capture System in MDW (again details). This could provide information about the level of coordination and cooperation between the performers (either human or artificial), which is a major aspect of group performance \citep{social-music}. Observing the motions of musicians would be particularly useful if the CAS could be extended to give visual signals. These experiments should provide information whether such differences are a result of the inability or unwillingness on the part of the musicians to conceive of computer partners as intentional and creative. 
+
+\section{Applications and Conclusion}
+\label{applications-conclusion}
+
+This PhD project will have practical and theoretical implications for the fields of joint action, performance science, and human-computer interaction. The development of the CAS will benefit future studies on performance coordination and provide practical applications for performing musicians and music students. By tuning and altering the parameters of the CAS, separate aspects of a music performer can be explored and their importance and value measured. Additionally, the accompaniment system would be a helpful and convenient tool for performers to practice with. Finally, the results of the experiments would allow the examination of people's perceptions of their partners' creative abilities, responsiveness and intentionality. 
+
+
+%Music and in particular the interpretation of a piece of music by a human performer is naturally viewed as something that could be perfected through learning, but is inherently a process of creativity and artistic expression.
+
+%Furthermore, an examination on the contexts in which these differences arise will be performed in order to check whether such differences are a result of the inability or unwillingness on the part of the musicians to conceive of computer partners as intentional and creative. 
+
+%Music and in particular the interpretation of a piece of music by a human performer is naturally viewed as something that could be perfected through learning, but is inherently a process of creativity, an artistic expression. 
+%A.I. is usually viewed as capable of performing automation and accurate industrial tasks - automatic driving, image recognition, information retrieval. It has the ability to 
+
+%\begin{itemize}
+
+%\item People's expectations of their partners' creative abilities.
+
+%\item People's perceptions of their partners' responsiveness and intentionality.
+
+%\item The degree of visual communication between performers that is possible.
+
+%\end{itemize}
+
+\bibliography{proposalbib}{}
+\bibliographystyle{apacite}
+
+\end{document}
